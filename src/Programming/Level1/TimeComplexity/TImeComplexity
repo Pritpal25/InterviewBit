@@ -1,0 +1,46 @@
+* Time Complexity of a program depends upon
+-- Single vs multi processor architecture
+-- 32bit vs 64 bit
+-- Size of input
+-- Read/Write speed from memory/disk
+
+* For analysis of time complexity, we use size of input as the factor. We will evaluate time as function of input size.
+
+* A sample model machine can be assumed to come up with time complexity in terms of input size.
+-- All arithmetic operation, logical and return statements take 1 unit of time.
+
+* Time taken by these algorithms can be categorized into sets
+-- Why ? Write a few same order functions. Notice that as the size of n keeps increasing, the lower order terms keep
+becoming irrelevant, which means they can be ignored for large sizes of input for calculating time.
+-- In that case, all the same order Time functions can fall into the same set.
+
+* TIME COMPLEXITY NOTATIONS
+-- Lets say there exists a time function f(n) : 5n2 + 2n + 1
+and lets say g(n) : n2
+
+1) Big-O notation/Asymptotic notation - Upper bound on the rate of growth of time.
+-- Time function f(n) would fall into O(g(n)) set if and only if there exists c and n0 such that
+    cg(n) >= f(n) for all n >= n0
+    This property is true for n0 = 1 and c = 8
+
+2) Ω notation - Lower bound on the rate of growth of time.
+-- Time function f(n) would fall into Ω(g(n)) set if and only if there exists c and n0 such that
+    cg(n) <= f(n) for all n >= n0
+    This property is true for n0 = 0 and c = 5
+
+3) θ notation - Tight bound on the rate of growth of time.
+-- Time function f(n) would fall into θ(g(n)) set if and only if there exists c1, c2 and n0 such that
+    c1g(n) <= f(n)  <= c2g(n) for all n >= n0
+    This property is true for n0 = 1, c1 = 5 and c2 = 8
+
+* Rules for calculating Time complexity.
+-- Calculate for very large input sets
+    -- Drop lower order terms and constants.
+-- Calculate for worst case scenarios
+    -- Choose the higher complexity one if there is branching logic.
+-- Running time of a program is sum of running time of its components.
+
+* Space Complexity : Space complexity is a measure of how efficient your code is in terms of memory used.
+-- Similar calculation as time.
+-- Additional space / memory is measured in terms of the largest memory use by the program when it runs. That is to say,
+    if you allocated O(N) memory, and later free it, that does not make the space complexity of your program O(1).
