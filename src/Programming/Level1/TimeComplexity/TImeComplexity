@@ -44,3 +44,10 @@ and lets say g(n) : n2
 -- Similar calculation as time.
 -- Additional space / memory is measured in terms of the largest memory use by the program when it runs. That is to say,
     if you allocated O(N) memory, and later free it, that does not make the space complexity of your program O(1).
+
+USEFUL TIPS
+-- Logarithm : A logarithm is the power to which a number must be raised in order to get some other number.
+-- Comparision of different time complexities :
+    https://adrianmejia.com/most-popular-algorithms-time-complexity-every-programmer-should-know-free-online-tutorial-course/
+-- https://stackoverflow.com/questions/42038294/is-complexity-ologn-equivalent-to-osqrtn/42038398
+    See trincot's asnwer.
