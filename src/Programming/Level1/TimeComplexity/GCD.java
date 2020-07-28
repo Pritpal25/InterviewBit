@@ -1,5 +1,8 @@
 package Programming.Level1.TimeComplexity;
 
+// https://en.wikipedia.org/wiki/Euclidean_algorithm
+// Check the link to understand more about the algo.
+
 public class GCD {
     public static int gcd(int a, int b) {
         if (a < 0) {
