@@ -1,0 +1,15 @@
+Pointers and 2D Arrays
+
+    int B[2][3]
+        Here B[0] and B[1] are simple 1D arrays of 3 integers each.
+        Hence the size of each one of those is 4*3 = 12 bytes.
+
+        Memory allocation
+
+     Address    400     404     408     412     416     420
+     Value       3       8       5       6       1       4
+
+-- NAME OF THE ARRAY RETURNS THE ADDRESS OF THE FIRST ELEMENT OF THE ARRAYS.
+-- THIS TIME FIRST ELEMENT IS NOT AN INTEGER, INSTEAD ITS AN ARRAY OF 3 INTEGERS.
+    Hence, int *p = B : Compilation error, since B will return pointer to 1D array and not an integer pointer.
+    int (*p)[3] = B : this will work, since p is a pointer to a 1D array of size 3.

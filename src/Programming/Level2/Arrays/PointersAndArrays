@@ -1,0 +1,23 @@
+Applicable to C/C++
+
+-- Lets say we have
+    int A[3]
+
+    Print(*(A+1)) - prints the value at A[1]
+    Print(*A + 1) - prints the value at A[0]+1
+
+-- ith elements
+    -- Address : &A[i] or (A+i)
+    -- Value : A[i] or *(A+i)
+
+-- One quirk about array pointers
+    Lets say we declare int A[5];
+    Here A is the base address of the array.
+
+    If you do, A++ -> it gives compilation error.
+
+    On the other hand, if you declare int *p = A;
+    and you do p++, this works and moves the pointer 4 bytes ahead in memory.
+
+    Also, you can do p = A, but doing A = p will give compilation error, because the base address of the array
+    cannot be modified by pointing to an integer array.

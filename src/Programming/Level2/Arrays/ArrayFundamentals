@@ -1,0 +1,23 @@
+Arrays
+-- Collection of objects of same data types.
+
+-- Declaration syntax
+    int a[5]  : data-type variable-name[size]
+
+-- Can be 1 dimensional, 2-D or 3-D arrays
+
+-- How is it stored in computer memory?
+    -- Each segments of computer memory is of 1 byte and each segment has its own address.
+    -- Lets say we declare int A[5], we know int takes 4 bytes, so total 20 bytes will get allocated by "computer" to
+        store this entire array.
+    -- Memory allocation of array elements is contiguous (stored in a continuum in memory).
+        Hence, access/modification is very easy. O(1) time
+            -- In C/C++, the name of the array is the base address of the array, i.e. the start address of the first
+                element of the array.
+                    Print A - prints base address, lets say 100
+                    Print *A - prints the element at first position in array.
+                    Print (A+1) - prints 104; here A is base address, and 1 is the offset.
+                    Print *(A+1) - prints value of 2nd element at the array.
+                Hence, the access and modification is O(1) time, since reaching each address can be done by adding offset
+                to base address.
+            -- In Java, internal workings are the same, but pointers arithmetics are not applicable.

@@ -1,0 +1,16 @@
+Pointers in C
+
+-- When a variable is declared, the "compiler" maintains a lookup table that stores the information
+    -- Ex : int a = 5;
+        Lookup table stores the following
+            a   int   Starting address of a
+
+-- In C and C++ its possible to access the address where the variable is stored
+    -- int a = 5;
+        int *p = &a;
+        Here p is a pointer to a.
+        Print(&a) = address of a;
+        Print(p) = same as above
+        Print(*p) = 5;
+        *p = 8;
+        Print(a) = 8;
