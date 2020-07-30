@@ -1,0 +1,13 @@
+Sorting : Arranging homogenous elements of a collection in a specific order of rank.
+
+Sorting Algos can be classigied on the following parameters
+1. Time Complexity.
+2. Space Complexity
+    In place, constant memory
+    Memory Usage grows with size of input.
+3. Stability
+    The order of the elements with the same rank doesnt change in the output.
+4. Internal vs External Sort
+    When all the elements that need to be sorted are in main memory - internal
+    When some or all the elements that need to be sorted are in disk/tape - external
+5. Recursive/Non Recursive
