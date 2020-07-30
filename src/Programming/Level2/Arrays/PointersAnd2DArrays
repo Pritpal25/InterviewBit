@@ -10,6 +10,17 @@ Pointers and 2D Arrays
      Value       3       8       5       6       1       4
 
 -- NAME OF THE ARRAY RETURNS THE ADDRESS OF THE FIRST ELEMENT OF THE ARRAYS.
--- THIS TIME FIRST ELEMENT IS NOT AN INTEGER, INSTEAD ITS AN ARRAY OF 3 INTEGERS.
+-- THIS TIME FIRST ELEMENT IS NOT AN INTEGER, INSTEAD ITS A 1-D ARRAY OF 3 INTEGERS.
     Hence, int *p = B : Compilation error, since B will return pointer to 1D array and not an integer pointer.
     int (*p)[3] = B : this will work, since p is a pointer to a 1D array of size 3.
+
+--  Print B || &B[0] // 400
+    Print *B || B[0] || &B[0][0] // 400
+    Print B+1 // add size of the 1-D array || &B[1] // 412
+    Print *(B+1) || B[1] || &B[1][0] // 412
+
+    Print (*(B+1) + 2) // 420
+    Print *(*(B+1)) // 6
+    Print *(*B + 1) // 8
+
+    B[i][j] = *(B[i] + j) = *(*(B+i) + j)
