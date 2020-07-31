@@ -11,7 +11,7 @@ import java.util.List;
 
     1. Time Complexity : O(n^2)
         Worst Case : Sorted in decreasing order
-            1 + 2 + 3 + 4 .... n = n(n+1)/2 ~
+            1 + 2 + 3 + 4 .... n-1 = n(n+1)/2 ~
     2. Space Complexity : O(1) : no new space required to sort.
     3. Stable Sort
     4. Internal Sort.
