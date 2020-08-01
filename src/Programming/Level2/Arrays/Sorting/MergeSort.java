@@ -11,7 +11,8 @@ import java.util.List;
         Both have same space and time complexity.
 
     1. Time Complexity : O(nLogn)
-    2. Space Complexity : O(n) 
+    2. Space Complexity : O(n)
+        Why is space complexity not O(nlogn) : https://cs.stackexchange.com/questions/122262/why-does-mergesort-have-on-space-complexity-if-it-splits-the-array-logn-time
     3. Stable Sort : Check the comment at condition in loop, depends on implementation
     4. Internal Sort.
     5. Recursive Sort
