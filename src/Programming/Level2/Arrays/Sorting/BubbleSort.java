@@ -26,12 +26,19 @@ public class BubbleSort {
         for(int i = 0; i < n-1; i++) {
             // For each pass, we are going to perform one less comparision in the end, since the elements
             // after each pass at the end are at its rightful place.
+            boolean swap = false;
             for(int j = 0; j < n-i-1; j++) {
                 // This is a STABLE SORT, if the check was >=, this would be an instable sort.
                 if(list.get(j) > list.get(j+1)){
                     list.set(j, list.set(j+1, list.get(j)));
+                    swap = true;
                 }
             }
+
+            // This is an optimization to the algorithm, where you can come out of the passes if
+            // there is a pass that did not require any swaps. That would only happen when entire list is sorted.
+            if(!swap)
+                break;
         }
 
         return list;
