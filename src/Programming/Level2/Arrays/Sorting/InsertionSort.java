@@ -11,9 +11,9 @@ import java.util.List;
 
     1. Time Complexity : O(n^2)
         Worst Case : Sorted in decreasing order
-            1 + 2 + 3 + 4 .... n-1 = n(n+1)/2 ~
-    2. Space Complexity : O(1) : no new space required to sort.
-    3. Stable Sort
+            1 + 2 + 3 + 4 .... n-1 = n(n-1)/2 = O(n^2)
+    2. Space Complexity : O(1) In-Place sorting algorithm : no new space required to sort,
+    3. Stable Sort : Check the comment at condition in loop, depends on implementation
     4. Internal Sort.
     5. Non-recursive Sort
  */
@@ -47,7 +47,7 @@ public class InsertionSort {
     }
 
     public static void main(String[] args) {
-        List<Integer> list = new ArrayList<Integer>();
+        List<Integer> list = new ArrayList<>();
         list.add(4);
         list.add(1);
         list.add(-66);
