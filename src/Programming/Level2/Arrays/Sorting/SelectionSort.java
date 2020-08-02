@@ -41,7 +41,7 @@ public class SelectionSort {
 
         return min_index;
     }
-    
+
     public static void main(String[] args) {
         List<Integer> list = Arrays.asList(14, 7, 3, 12, 9, 11, 3, 6, 2);
 
