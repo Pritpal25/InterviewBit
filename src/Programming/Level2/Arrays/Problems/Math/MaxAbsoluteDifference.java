@@ -31,6 +31,7 @@ public class MaxAbsoluteDifference {
         You'll see that 2 results are redundant and the other 2 can be calculated in O(n)
         time in one traversal.
 
+        Soln explanation : https://www.youtube.com/watch?v=Ov4weYCIipg&feature=youtu.be
          */
         if(A.size() <= 1) {
             return 0;
