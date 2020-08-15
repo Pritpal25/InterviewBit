@@ -25,7 +25,7 @@ public class MaxAbsoluteDifference {
 
     public static int optimizedMaxArr(ArrayList<Integer> A) {
         /*
-        Optimized : Break down the funcion into 4 conditions based on
+        Optimized : Break down the function into 4 conditions based on
         i > or < j and A[i] > or < A[j]
 
         You'll see that 2 results are redundant and the other 2 can be calculated in O(n)
