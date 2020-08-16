@@ -1,7 +1,9 @@
 package Programming.Level2.Arrays.Problems.Math;
 
 import java.util.ArrayList;
-
+/*
+Solution Explanation : https://www.youtube.com/watch?v=cLVpE5q_-DE&feature=youtu.be
+ */
 public class Flip {
     public static ArrayList<Integer> flip(String A) {
         ArrayList<Integer> result = new ArrayList<>(2);
