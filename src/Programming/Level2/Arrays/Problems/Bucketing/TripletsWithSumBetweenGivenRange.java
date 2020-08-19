@@ -2,6 +2,10 @@ package Programming.Level2.Arrays.Problems.Bucketing;
 
 import java.util.ArrayList;
 
+/*
+Soln Explanation : https://www.quora.com/Programming-Interviews/Given-n-positive-real-numbers-find-whether-there-exists-a-triplet-among-this-set-such-that-the-sum-of-the-triplet-is-in-the-range-1-2-Do-it-in-linear-time-and-constant-space
+ */
+
 public class TripletsWithSumBetweenGivenRange {
     public static int solve(ArrayList<String> A) {
         if (A.size() < 3) {
