@@ -67,7 +67,7 @@ public class MaxConsecutiveGap {
         }
 
         int maxConsecutiveGap = (int)min_maxConsecutiveGap; // This will the max value in worst case.
-        MinMaxPair prev_pair = buckets[0];
+        MinMaxPair prev_pair = buckets[0]; // If there are more than 1 elements, there will always be the Min element in first bucket, so bucket[0] will never be null
         MinMaxPair curr_pair = buckets[0];
 
         for(int i = 1; i < buckets.length; i++) {
