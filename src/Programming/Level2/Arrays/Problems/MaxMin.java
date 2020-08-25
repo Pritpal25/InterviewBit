@@ -2,6 +2,10 @@ package Programming.Level2.Arrays.Problems;
 
 import java.util.ArrayList;
 
+/*
+Soln Explanation : https://www.geeksforgeeks.org/maximum-and-minimum-in-an-array/
+https://stackoverflow.com/questions/13544476/how-to-find-max-and-min-in-array-using-minimum-comparisons
+ */
 public class MaxMin {
     public int solve(ArrayList<Integer> A) {
         if(A.size() < 1) {
